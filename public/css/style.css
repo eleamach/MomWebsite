@@ -1,0 +1,110 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: rgb(99, 99, 99);
+    font-size: 50px;
+    text-align: center;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: auto; 
+    padding: 15px;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Assure que le texte à l'intérieur de .about-section est aligné à gauche */
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.about-section p {
+    font-size: 20px; /* Augmente la taille de la police des paragraphes */
+    line-height: 1.6;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.contact-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #7e7f81; /* Bleu pour les liens */
+    border-radius: 10px; /* Bords arrondis pour les liens */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    background-color: #7e7f81; /* Bleu foncé au survol */
+}
+
+.tocenter {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px; /* Augmente la taille de la police des paragraphes */
+    line-height: 1.6;
+}
