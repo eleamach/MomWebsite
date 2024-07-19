@@ -4,12 +4,12 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm install
+            - echo "No preBuild step needed"
         build:
           commands:
-            - npm start
+            - echo "No build step needed"
       artifacts:
-        baseDirectory: app  # Répertoire où les artefacts de construction sont stockés
+        baseDirectory: public/view  # Répertoire contenant les fichiers à déployer
         files:
           - '**/*'
       cache:
