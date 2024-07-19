@@ -9,7 +9,7 @@ applications:
           commands:
             - echo "No build step needed"
       artifacts:
-        baseDirectory: app/src/view  # Répertoire contenant les fichiers HTML
+        baseDirectory: view  # Répertoire contenant les fichiers HTML
         files:
           - '**/*'
       cache:
