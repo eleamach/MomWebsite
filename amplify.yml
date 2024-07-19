@@ -9,7 +9,7 @@ applications:
           commands:
             - echo "No build step needed"
       artifacts:
-        baseDirectory: app  # Répertoire contenant les fichiers à déployer
+        baseDirectory: app/src/view  # Répertoire contenant les fichiers à déployer
         files:
           - '**/*'
       cache:
