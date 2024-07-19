@@ -1,0 +1,14 @@
+{
+    "name": "mon-projet-js",
+    "version": "1.0.0",
+    "main": "app/public/js/app.js",
+    "scripts": {
+        "start": "node app/public/js/app.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
