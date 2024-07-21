@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 .logo {
-    width: 50px;
+    width: 70px;
     height: auto; 
     padding: 15px;
 }
@@ -107,4 +107,118 @@ main {
 p {
     font-size: 20px; /* Augmente la taille de la police des paragraphes */
     line-height: 1.6;
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.menu {
+    display: flex;
+    padding: 20px;
+}
+
+#auth {
+    display: flex;
+    align-items: center;
+}
+
+#auth button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #8a8a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#auth button:hover {
+    background-color: #777;
+}
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.login-container button {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a9a9a9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.login-container button:hover {
+    background-color: #565656;
+}
+
+#test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    margin-top: 0;
+}
+
+.article p {
+    margin: 0;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.article img {
+    width: 500px; /* Augmenter la largeur des images */
+    height: auto; /* Conserver le ratio d'aspect */
+    border-radius: 5px; /* Bords arrondis pour l'image */
+}
+
+#login-btn {
+    display: inline-block;
 }

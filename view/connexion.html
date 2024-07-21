@@ -7,17 +7,20 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="needle.png" type="image/x-icon">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="app.js"></script> <!-- Déplacez le script ici -->
-        <script src="login.js" defer></script> <!-- Charger le script de gestion de connexion -->
+        <script src="app.js"></script>
     </head>
 <body>
     <div id="header"></div> 
     <main>
-        <div class="container" id="articles-container">
-            <!-- Les articles seront ajoutés ici par JavaScript -->
+        <div id="test">
+            <div class="login-container">
+                <h2>Connexion</h2>
+                <input type="text" id="username" placeholder="Nom d'utilisateur">
+                <input type="password" id="password" placeholder="Mot de passe">
+                <button onclick="login()">Se Connecter</button>
+            </div>
         </div>
     </main>
     <div class="footer"></div>
 </body>
-
 </html>
