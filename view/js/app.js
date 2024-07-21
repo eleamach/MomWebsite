@@ -18,23 +18,22 @@ function login() {
     }
 }
 
-// Ce code pour ajouter des articles peut être déplacé vers un autre fichier si nécessaire.
 document.addEventListener('DOMContentLoaded', function() {
     const articles = [
         {
             title: "Titre de l'Article 1",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            imageUrl: "test/1.jpeg"
+            imageUrls: ["images/1.jpeg", "images/2.jpeg"]  // Tableau d'URLs d'images
         },
         {
             title: "Titre de l'Article 2",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            imageUrl: "2.jpeg"
+            imageUrls: ["images/1.jpeg", "images/2.jpeg", "images/3.jpeg"]  // Tableau d'URLs d'images
         },
         {
             title: "Titre de l'Article 3",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            imageUrl: "3.jpeg"
+            imageUrls: ["images/3.jpeg"]  // Tableau d'URLs d'images
         }
     ];
 
@@ -44,9 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const articleDiv = document.createElement('div');
         articleDiv.classList.add('article');
         
-        const img = document.createElement('img');
-        img.src = article.imageUrl;
-        img.alt = `Image de ${article.title}`;
+        // Ajout des images
+        article.imageUrls.forEach(imageUrl => {
+            const img = document.createElement('img');
+            img.src = imageUrl;
+            img.alt = `Image de ${article.title}`;
+            articleDiv.appendChild(img);
+        });
 
         const textDiv = document.createElement('div');
 
@@ -59,9 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
         textDiv.appendChild(title);
         textDiv.appendChild(content);
 
-        articleDiv.appendChild(img);
         articleDiv.appendChild(textDiv);
 
         container.appendChild(articleDiv);
     });
 });
+
