@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Titre de l'Article 1",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            imageUrl: "1.jpeg"
+            imageUrl: "test/1.jpeg"
         },
         {
             title: "Titre de l'Article 2",
